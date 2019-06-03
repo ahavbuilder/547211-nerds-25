@@ -9,7 +9,7 @@
         <div class="gray-wrapper">  
             <a href="#">
                 <!-- прописать width и height -->
-                <img src="img/nerds-logo.png.png" width="160px" height="65px" alt="logo">   
+                <img src="img/nerds-logo.png.png" width="160" height="65" alt="logo">   
             </a>
             </div>
             <nav class="main-navigation">
@@ -21,7 +21,7 @@
                 </ul>
             </nav>
                         <div class="cart">
-                 <a href="img/basket-icon.svg">корзина</a>
+                 <a href="">корзина</a>
             </div>
             
         </div>
@@ -40,16 +40,29 @@
                 <li><img src="img/img-kvast-jpg.png" alt=""></li>
             </ul>
         </section>
+        <fieldset>
+        <legend>Сетка:</legend>   
         <ul>
-            <li><input type="radio" name="" id="" checked></li>
-            <li><input type="radio" name="" id=""></li>
-            <li><input type="radio" name="" id=""></li>
-            <li><input type="checkbox" name="" id="" checked></li>
-            <li><input type="checkbox" name="" id=""></li>            
-            <li><input type="checkbox" name="" id="" checked></li>
-            <li><input type="checkbox" name="" id=""></li>
-            <li><input type="checkbox" name="" id=""></li>
+            <li class="web-option"><input type="radio" name="web-choices" value="Adaptive" id="adaptive-choice" checked>
+                <label for="adaptive-choice">Адаптивная</label></li>
+            <li class="web-option"><input type="radio" name="web-choices" value="Fixed" id="fixed-choice">
+                <label for="fixed-choice">Фиксированнная</label></li>
+            <li class="web-option"><input type="radio" name="web-choices" value="Rubber" id="rubber-choice">
+                <label for="rubber-choice">Резиновая</label>
+        <legend>Особенности:</legend></li>
+            <li><input type="checkbox" name="Slider" id="slider" checked>
+                <label for="slider">Слайдер</label></li>
+            <li><input type="checkbox" name="Block" id="block">
+                <!-- Зачем имя? -->
+                <label for="block">Блок преимуществ</label></li>            
+            <li><input type="checkbox" name="News" id="news" checked>
+                <label for="news">Новости</label></li>
+            <li><input type="checkbox" name="Gallery" id="gallery">
+                <label for="gallery">Галерея</label></li>
+            <li><input type="checkbox" name="Cart" id="cart">
+                <label for="cart">Корзина</label></li>
         </ul>
+    </fieldset>  
     </aside>    
     <footer>
         <ul>
@@ -59,7 +72,20 @@
         </ul>
             <b>Давайте дружить, это выгодно</b>
             <p>Скидка 10% для друзей из социальных сетей</p> 
-
-        </footer>        
+        </footer>
+        
+        <h2>Напишите нам</h2>
+        <button>Закрыть</button>
+        <form action="POST">
+        <fieldset>  
+            <legend>Ваше имя:</legend>
+            <input type="text" name="name" placeholder="Имя Фамилия">
+            <legend>Ваш e-mail:</legend>
+            <input type="text" placeholder="email@example.com">
+            <legend>Текст письма:</legend>
+            <input type="textarea" maxlength="100" placeholder="В свободной форме">
+            <button>ОТПРАВИТЬ</button>
+        </fieldset>  
+    </form>      
 </body>
 </html>
