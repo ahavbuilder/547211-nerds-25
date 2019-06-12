@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/css.css">
     <title>Nerds</title>
 </head>
 <body>
@@ -14,14 +16,14 @@
             </div>
             <nav class="main-navigation">
                 <ul>
-                        <li><a href="#">студия</a></li>
-                        <li><a href="#">клиенты</a></li>
-                        <li><a href="#">магазин</a></li>
-                        <li><a href="#">контакты</a></li>
+                    <li><a href="#">студия</a></li>
+                    <li><a href="#">клиенты</a></li>
+                    <li><a href="#">магазин</a></li>
+                    <li><a href="#">контакты</a></li>
                 </ul>
             </nav>
-                        <div class="cart">
-                 <a href="">корзина</a>
+            <div class="cart">
+                 <a href="#">корзина</a>
             </div>
             
         </div>
@@ -40,52 +42,62 @@
                 <li><img src="img/img-kvast-jpg.png" alt=""></li>
             </ul>
         </section>
-        <fieldset>
-        <legend>Сетка:</legend>   
-        <ul>
-            <li class="web-option"><input type="radio" name="web-choices" value="Adaptive" id="adaptive-choice" checked>
-                <label for="adaptive-choice">Адаптивная</label></li>
-            <li class="web-option"><input type="radio" name="web-choices" value="Fixed" id="fixed-choice">
-                <label for="fixed-choice">Фиксированнная</label></li>
-            <li class="web-option"><input type="radio" name="web-choices" value="Rubber" id="rubber-choice">
-                <label for="rubber-choice">Резиновая</label>
-        <legend>Особенности:</legend></li>
-            <li><input type="checkbox" name="Slider" id="slider" checked>
-                <label for="slider">Слайдер</label></li>
-            <li><input type="checkbox" name="Block" id="block">
-                <!-- Зачем имя? -->
-                <label for="block">Блок преимуществ</label></li>            
-            <li><input type="checkbox" name="News" id="news" checked>
-                <label for="news">Новости</label></li>
-            <li><input type="checkbox" name="Gallery" id="gallery">
-                <label for="gallery">Галерея</label></li>
-            <li><input type="checkbox" name="Cart" id="cart">
-                <label for="cart">Корзина</label></li>
-        </ul>
-    </fieldset>  
-    </aside>    
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Сетка:</legend>   
+                
+                <ul>
+                    <li class="web-option"><input type="radio" name="web-choices" value="Adaptive" id="adaptive-choice" checked>
+                        <label for="adaptive-choice">Адаптивная</label></li>
+                    <li class="web-option"><input type="radio" name="web-choices" value="Fixed" id="fixed-choice">
+                        <label for="fixed-choice">Фиксированнная</label></li>
+                    <li class="web-option"><input type="radio" name="web-choices" value="Rubber" id="rubber-choice">
+                        <label for="rubber-choice">Резиновая</label>
+                </ul>
+            </fieldset> 
+            
+            <fieldset>      
+                <legend>Особенности:</legend>
+                <ul>
+                    <li><input type="checkbox" name="Slider" id="slider" checked>
+                        <label for="slider">Слайдер</label></li>
+                    <li><input type="checkbox" name="Block" id="block">
+                        <!-- Зачем имя? -->
+                        <label for="block">Блок преимуществ</label></li>            
+                    <li><input type="checkbox" name="News" id="news" checked>
+                        <label for="news">Новости</label></li>
+                    <li><input type="checkbox" name="Gallery" id="gallery">
+                        <label for="gallery">Галерея</label></li>
+                    <li><input type="checkbox" name="Cart" id="cart">
+                        <label for="cart">Корзина</label></li>
+                </ul>
+            </fieldset> 
+            <button type="submit">Показать</button>
+        </form>   
     <footer>
         <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#">Вконтакте</a></li>
+            <li><a href="#">Фейсбук</a></li>
+            <li><a href="#">Инстаграмм</a></li>
         </ul>
             <b>Давайте дружить, это выгодно</b>
             <p>Скидка 10% для друзей из социальных сетей</p> 
         </footer>
+
+        <div class="modal-form">
+            <h2>Напишите нам</h2>
+            <button type="button">Закрыть</button>
+            <form action="" method="POST"> 
+                <label for="nameId">Ваше имя:</label>
+                <input id="nameId" type="text" name="name" placeholder="Имя Фамилия">
+                <label for="e-mailId">Ваш e-mail:</label>
+                <input id="e-mailId" type="text" placeholder="email@example.com">
+                <label for="textwrite">Текст письма:</label>
+                <input id="textwrite" type="textarea" maxlength="100" placeholder="В свободной форме">
+                <button type="submit">ОТПРАВИТЬ</button>  
+            </form>    
+        </div>
         
-        <h2>Напишите нам</h2>
-        <button>Закрыть</button>
-        <form action="POST">
-        <fieldset>  
-            <legend>Ваше имя:</legend>
-            <input type="text" name="name" placeholder="Имя Фамилия">
-            <legend>Ваш e-mail:</legend>
-            <input type="text" placeholder="email@example.com">
-            <legend>Текст письма:</legend>
-            <input type="textarea" maxlength="100" placeholder="В свободной форме">
-            <button>ОТПРАВИТЬ</button>
-        </fieldset>  
-    </form>      
+          
 </body>
 </html>

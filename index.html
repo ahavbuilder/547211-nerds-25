@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/css.css">
@@ -18,7 +17,7 @@
                </a>
               </div>
                <nav class="main-navigation">
-                  <ul>
+                  <ul class="main-navigation-list">
                     <li><a href="#">студия</a></li>
                     <li><a href="#">клиенты</a></li>
                     <li><a href="#">магазин</a></li>
@@ -33,12 +32,12 @@
         </div>
     </header>
     <main>
-      <h1>Долго дорого скрупулезно</h1>
+      <h1 class="page-title">Долго дорого скрупулезно</h1>
        <p>Математически выверенный дизайн</p>
             <button class="button">
               Узнать больше
             </button>
-            <section>
+            <section class="offering">
               <ul>
                 <li>
                    <!-- прописал width и height -->
@@ -66,13 +65,27 @@
     </main>
     <footer>
       <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+        <li><a href="#">Вконтакте</a></li>
+          <li><a href="#">Фейсбук</a></li>
+          <li><a href="#">Инстаграмм</a></li>
       </ul>
       <b>Давайте дружить, это выгодно</b>
       <p>Скидка 10% для друзей из социальных сетей</p> 
     </footer> 
+
+    <div class="modal-form">
+      <h2>Напишите нам</h2>
+      <button type="button">Закрыть</button>
+      <form action="" method="POST"> 
+          <label for="nameId">Ваше имя:</label>
+          <input id="nameId" type="text" name="name" placeholder="Имя Фамилия">
+          <label for="e-mailId">Ваш e-mail:</label>
+          <input id="e-mailId" type="text" placeholder="email@example.com">
+          <label for="textwrite">Текст письма:</label>
+          <input id="textwrite" type="textarea" maxlength="100" placeholder="В свободной форме">
+          <button type="submit">ОТПРАВИТЬ</button>  
+      </form>    
+    </div>
     
     
 </body>
