@@ -1,26 +1,73 @@
-.gray-wrapper{
-    display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    background-color: #eeeeee
-    
-    
-    
-    
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffffff;
+    min-width: 1200px;
 }
-.main-navigation ul {
-    display: flex;
-    padding-left: 0;
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.main-navigation {
+
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+.main-navigation-list,
+.footer-list{
+    list-style: none;
+
+}
+.main-navigation a,
+.offering a,
+.footer-list a{
+    color: #000000;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus,
+.footer-list a:hover,
+.footer-list a:focus {
+    background-color: yellow;
+}
+.offering{
     list-style: none;
 }
-
-.main-navigation li {
-    margin-right: 5px;
+.section{
+    text-align: center;
 }
-.offering>ul{
-    display: flex;
-    flex-direction: row;
+.button{
+    font: inherit;
+    text-align: center;
+    color: #000000;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: none;
+}
+.button: hover,
+.button: focus,
+.button: activate
+
+{
+    background-color: yellow;
 
 }
- 
+li{
+    list-style: none;
+    color: #000000;
+}
+

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/css.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Nerds</title>
 
 </head>
-<body>
+<body class="index-page">
     <header>
         <div class="gray-wrapper">
             <div class="container clearfix">
@@ -37,13 +38,13 @@
             <button class="button">
               Узнать больше
             </button>
-            <section class="offering">
-              <ul>
+            <section>
+              <ul class="offering">
                 <li>
                    <!-- прописал width и height -->
                   <img src="img/advantage-picture-red.png" width="300" height="165" alt="web-sites">
                     <h3>Веб-сайты</h3>
-                      <p>Мир никогда не будет преждним после того как увидет ваш сайт</p>
+                      <p>Мир никогда не будет преждним после того как увидит ваш сайт</p>
                     <a href="#">Заказать</a>
                 </li>
                 <li>
@@ -64,7 +65,7 @@
             </section>
     </main>
     <footer>
-      <ul>
+      <ul class="footer-list">
         <li><a href="#">Вконтакте</a></li>
           <li><a href="#">Фейсбук</a></li>
           <li><a href="#">Инстаграмм</a></li>
@@ -75,7 +76,7 @@
 
     <div class="modal-form">
       <h2>Напишите нам</h2>
-      <button type="button">Закрыть</button>
+      <button class="button">Закрыть</button>
       <form action="" method="POST"> 
           <label for="nameId">Ваше имя:</label>
           <input id="nameId" type="text" name="name" placeholder="Имя Фамилия">
